@@ -1,0 +1,581 @@
+// Tablets & Smaller
+
+// IPAD PRO
+  @media(max-width: 1024px) and (max-height: 1366px) {
+    .container {
+      padding: 0 1rem;
+    }
+    #header-home {
+      height: 70vh;
+  
+      #showcase-main {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0;
+  
+        .showcase-left {
+          h1 {
+            margin: 0 0 22px 0;
+          }
+          p {
+            margin: 0;
+          }
+          .btn-showcase {
+            margin: 22px auto 40px auto;
+          }
+        }
+  
+        .showcase-right {
+          display: flex;
+          justify-content: center;
+          margin: auto;
+        }
+      }
+    }
+  
+    #portfolio {
+  
+      &-b {
+  
+        .title {
+          margin-top: 4rem;
+  
+          h3 {
+            font-size: 50px;
+          }
+  
+          p {
+            font-size: 18px;
+          }
+        }
+  
+        .products-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .products-grid-print {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .products-grid-web {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .products-grid-user {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .products-grid-mockUp {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  
+    #about {
+  
+      &-a {
+  
+        .about-title {
+          
+          h1 {
+            font-size: 50px;
+            width: 200%;
+          }
+  
+          p {
+            font-size: 18px;
+            width: 200%;
+          }
+        }
+  
+        .grid-container {
+          grid-template-areas: 
+          'main-img person-description person-description'
+          'main-img person-description person-description'
+          'other-team other-team other-team';
+  
+          .person-description {
+            h2 {
+              font-size: 40px;
+            }
+  
+            p {
+              font-size: 18px;
+            }
+          }
+        
+          .other-team {
+            margin: 1rem 0; 
+            padding: 0.7rem;
+  
+            .right1,
+            .right2,
+            .right3,
+            .right4 {
+              width: 100%;
+  
+              div {
+                opacity: 1;
+              }
+            }
+          }
+  
+          .main-img {
+            grid-area: main-img;
+          }
+          .person-description {
+            grid-area: person-description;
+          }
+          .other-team {
+            grid-area: other-team;
+          }
+        }
+      }
+    }
+  
+    #contact {
+      .contact-title {
+        h1 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+  
+      .flex-contact {
+        .contact-form {
+          .flex {
+            flex-direction: column;
+  
+            input {
+              &::placeholder {
+                font-size: 18px;
+              }
+            }
+          }
+  
+          textarea {
+            padding: 1.9rem 3rem;
+  
+            &::placeholder {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+// IPAD
+  @media(max-width: 768px) and (max-height: 1024px) {
+    #header-home {
+      height: 90vh;
+    }
+  
+    #portfolio {
+      &-a {
+        height: 90vh;
+        margin-top: 60px;
+        .flex {
+          flex-direction: column;
+  
+          .content-left {
+            width: 100%;
+  
+            .btn-portfolio {
+              margin: 2rem 0;
+            }
+          }
+        }
+  
+        .content-right {
+          width: 100%;
+          margin: 0;
+          grid-gap: 1rem;
+        }
+      }
+  
+        &-b {
+          .products-nav {
+            ul {
+              li {
+                a{
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+  
+          .products-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .products-grid-print {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .products-grid-web {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .products-grid-user {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .products-grid-mockUp {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+    }
+  
+    #about {
+      &-a {
+        .person-description {
+          ul{
+            display: flex;
+            flex-direction: column;
+            li{
+              padding: 0.6rem;
+            }
+          }
+        }
+      }
+  
+      &-b {
+        .flex {
+          p {
+            font-size: 18px;
+          }
+          .form-group {
+            margin: 3rem auto 0 auto;
+            width: 90%;
+          }
+        }
+      }
+    }
+  
+    #contact {
+      .contact-title {
+        width: 70%;
+      }
+  
+      .flex-contact {
+        .contact-info {
+          padding: 100px 0 0 40px;
+        }
+      }
+    }
+  }
+
+
+// Smartphones
+
+// IPHONE X
+  @media(max-width: 375px){
+  
+    #button {
+      visibility: hidden;;
+    }
+
+      #main-nav {
+        height: 50vh;
+        margin-top: 1rem;
+  
+        ul {
+          flex-direction: column;
+          margin: 0 auto;
+  
+          li {
+            margin: 0;
+            padding: 2rem;
+            border-bottom: 1px solid #fff;
+            text-align: center;
+  
+            &:hover {
+              background: inherit;
+            }
+  
+            a {
+              font-size: 20px;
+              padding: 2rem;
+              margin: 0;
+            }
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+    }
+    #header-home {
+    height: 60vh;
+      #showcase-main {
+        grid-template-columns: repeat(1, 1fr);
+        .showcase-left {
+          h1 {
+            font-size: 38px;
+            letter-spacing: normal;
+            line-height: 60px;
+            margin-left: 0;
+            padding: 0;
+  
+            span {
+              letter-spacing: 1.5px;
+            }
+  
+            p {
+              margin: 0;
+            }
+          }
+        }
+  
+        .none {
+          display: none;
+          margin: 0;
+          padding: 0;
+  
+        }
+      }
+    }
+  
+    #portfolio {
+      &-a {
+        height: 198vh;
+        .flex {
+          .content-left {
+            h1 {
+              font-size: 38px;
+            }
+  
+            p {
+              width: 100%;
+            }
+          }
+  
+          .content-right {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0;
+  
+            div:nth-child(3) img {
+              margin-top: 8px;
+            }
+    
+            div:nth-child(3) h3 {
+              margin-top: 8px;
+            }
+  
+            div:last-child img {
+              margin-top: 8px;
+            }
+    
+            div:last-child h3 {
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+  
+      &-b {
+        .title {
+          margin-top: 0;
+          justify-content: left;
+  
+          h3 {
+            font-size: 38px;
+          }
+  
+          p {
+            text-align: left;
+            padding-left: 12.8px;
+          }
+  
+          .main-bottom-line {
+            margin-left: -11.7rem;
+          }
+        }
+  
+        .products-nav {
+          justify-content: start;
+          ul {
+            padding: 0;
+            padding-left: 12.8px;
+            flex-direction: column;
+            justify-content: start;
+  
+            li {
+              padding: 0 0 2rem 0;
+              
+  
+              &:first-child {
+                padding: 0 0 2rem 0;
+              }
+  
+              a {
+                font-size: 20px;
+                border-bottom: 1px dotted #333;
+              }
+            }
+          }
+        }
+  
+        .products-grid {
+          margin: 1.5rem 0 0 0;
+          padding: 0 ;
+          grid-template-columns: repeat(2, 1fr);
+  
+          div {
+            height: 163px;
+            width: 163px;
+          }
+        }
+        .products-grid-print {
+          margin: 1.5rem 0 0 0;
+          padding: 0 ;
+          grid-template-columns: repeat(2, 1fr);
+  
+          div {
+            height: 163px;
+            width: 163px;
+          }
+        }
+        .products-grid-web {
+          margin: 1.5rem 0 0 0;
+          padding: 0 ;
+          grid-template-columns: repeat(2, 1fr);
+  
+          div {
+            height: 163px;
+            width: 163px;
+          }
+        }
+        .products-grid-user {
+          margin: 1.5rem 0 0 0;
+          padding: 0 ;
+          grid-template-columns: repeat(2, 1fr);
+  
+          div {
+            height: 163px;
+            width: 163px;
+          }
+        }
+        .products-grid-mockUp {
+          margin: 1.5rem 0 0 0;
+          padding: 0 ;
+          grid-template-columns: repeat(2, 1fr);
+  
+          div {
+            height: 163px;
+            width: 163px;
+          }
+        }
+      }
+    }
+  
+    #about {
+      &-a {
+        height: 252vh;
+        .about-title {
+          margin: 4rem 0 0 0;
+          width: 51%;
+          
+          h1 {
+            font-size: 38px;
+          }
+        }
+  
+        .grid-container {
+          grid-template-areas: 
+        'main-img'
+        'main-img'
+        'person-description'
+        'other-team';
+  
+        .person-description {
+          margin: 1rem 0 0 0;
+          padding-left: 10px;
+          width: 100%;
+  
+          ul {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 36.8px 0 0 0;
+  
+            li {
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+  
+        .other-team {
+          flex-direction: column;
+  
+          div {
+            margin-bottom: 2rem;
+          }
+        }
+  
+        .main-img {
+          grid-area: main-img;
+        }
+        .person-description {
+          grid-area: person-description;
+        }
+        .other-team {
+          grid-area: other-team;
+        }
+        }
+      }
+  
+      &-b {
+        height: 80vh;
+        .flex {
+          margin: 0;
+          padding: 2rem 0 2rem 1rem;
+  
+          h1 {
+            font-size: 38px;
+          }
+  
+          .form-group {
+            flex-direction: column;
+            margin: 1rem 0 0 0;
+            padding: 1rem;
+            justify-content: center;
+            align-items: center;
+  
+            input {
+              margin: 0 0 1.5rem 0;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  
+    #contact {
+      margin-top: 4rem;
+      .contact-title {
+        width: 100%;
+  
+        h1 {
+          font-size: 38px;
+        }
+      }
+  
+      .flex-contact {
+        flex-direction: column;
+  
+        .contact-form {
+          width: 100%;
+  
+          textarea {
+            padding: 1.9rem 2rem;
+          }
+        }
+  
+        .contact-info {
+          width: 100%;
+  
+          h3,
+          p,
+          a {
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
+  }
